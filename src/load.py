@@ -27,12 +27,3 @@ def load_data(repo_url):
     subprocess.run([git_cmd, "push", "-u", "origin", "main", "--force"], check=True)
 
     print(f"Published updates to GitHub repo: {repo_url}")
-
-
-def main():
-    # CHANGE THIS to your GitHub repo URL
-    load_data(repo_url)
-
-
-if __name__ == "__main__":
-    main()
